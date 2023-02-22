@@ -1,0 +1,177 @@
+<title>(/title> = название сайта (-)
+<h1></h1> =абзац (Body)
+<p></p> = текст(Body)
+<b></b> = жирный шрифт (В тексте)            ====     <strong></strong>
+<I></I> = курсив (В тексте)       =====      <em></em>
+<u></u> = подчеркнуть(В тексте)
+                                        Списки
+<ul></ul> не нумерованный список(</ul> на след строчке)
+<ol></ol> нумерованный список
+<li></li> текст в списках
+
+                                        Фото
+<img src=’Название файла’/> (body)
+(Если фото будет в папке то прописываем'images/нф’
+alt=’ ‘ – нужно прописывать по стандартам, если фото не найдено то оно пишет название
+width=’Пиксели’ – ширена
+height=’Пиксели’ -высота
+                                  ссылка
+<a href=’ ссылки ии сайт’ target=’_blank’> НАЗВАНИЕ ЧТО БУДЕТ ВЫВ НА ЭКРАН бТекст</a>
+Target=”_blank”переносит на др страницу
+                                       Таблицы
+<table border=’1’ width=’Проценты от всей страницы или пиксели’  height=”Проценты или пиксели”>
+              <tr>
+                              <tr>1 столбец</tr>
+                               <tr>2 столбец</tr>
+              </tr>
+ </table>
+<tr></tr> - строка
+Border – выделяет клеточку с инфой
+                                Блоки
+<div></div>
+                              ФОРМА
+<form name=’название наше форма’ action='Путь к файлу который обрабатывает’  method=’post’
+     <div>
+                <label>Введите логин </label>
+                 <input type=’text’ name=’login’
+</form>
+Разнообразие инпут type=’email,password,
+<input type=’submit’ name=’’ value=’Зарегистрировать’
+<input type’radio’ name’MAX’ value=’0’/>Мужской
+<input type’radio’ name’MAX’ value=’1’/>Женский
+Checkbox- ознакомился с правилами
+File –загрузить файл
+Select- год рождения(Закрывающтийся)
+<option value='год который мы введем’>года</option> -внутри  селекта
+textarea placeholder='Подсказка'  пустое поле
+                                         Css
+<link rel=’style(название файла)heet’ type=’text/css’ href=”Адрес”
+1Div{
+       Background-colour:цвет; блок изменит цвет
+        Height: 200px
+}
+2P{
+     Color:цвет; все слова изменят цвет
+3 div p{
+        Color:Цвет;
+}
+
+4div p span {
+              Font-size:25px;(Размер шрифта)
+}
+                                   Классы
+Html
+<div class=’название класса’>
+          <div> текст
+Css
+.название касса{
+      Width:100%
+     background:цвет
+}
+Id обраш=щение#
+<p data-название>
+ Css
+P[data-text]{
+   Параметры
+}
+                                               Отступы
+Padding-top:отступ сверху
+Padding-right отступ справа
+Padding-bottom снизу
+Padding-left слева
+Padding все сразу
+Margin внешний отступ
+
+Строчные display: inline;
+Justify-content: выравнивает по right ,center, space-between – расталкивает по все стр
+                        Шрифт
+Font-family:шрифт;
+Font-weight:номереа жирный шрифт
+Fond-style наклонение
+Text-decoration: none убирает нижнее подчеркивание
+   Сторонние шрифты
+“font-face{
+   Font-familyz;opensan
+   } урок 14
+Border: 5px solid #f00
+Borer-top рамку сверху
+Border-radius:20px стоновятся немного опруглее углы
+ Background: url(‘ОБРАЩЕНИЕ К КАРТИНКЕ’)no-repead;
+Background-size: cover делает выравнивание картинки
+                               Верстка
+<header class=’’></header> = div но нужно длать так)
+Max-width: 1140px;
+<nav></nav> - в нем лежат пункты меню ссылки
+<input placeholder текст в поле>(В type=text)
+Value – placeholder только в submit
+d-flax ставим в самый первый класс  прямо в классеи в css
+{
+display: flax;
+Jutify-content: space-between;
+Align-items: center;
+}
+
+Сайт для перевода пикселей в m
+ http://pxtoem.com/
+
+
+
+
+
+
+
+</br> не парный идет после тегов и переносит текст на следующую строчку
+
+Блок.hover{
+       Ширина
+ 	Высота
+}
+
+Если в класс добавить container то он сдвигает направо
+
+Background-repeat: no-repet команда для того чтобы
+Картинки не повторялись
+Background-size: cover;
+Display: flex; делает все в строчку
+Align-items: center; выравнивает все по центру
+Text-decoration: none;убирает подчеркивание
+Position: absolute; команда делающая что бы объект не от кого не зависил
+Posirion: relative; делает класс родителем
+Justify-content: space-around; делает все элименты на разных расстояниях
+Что бы сделать черточку нужно
+
+.header-title2::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 61px;
+    background-color: #fff;
+    left: 260px;
+    top: 425px;
+}
+
+
+                    Дизайн
+.link:hover{
+	color: color когда мы на него наводим;
+}
+.link{
+ 	transition: color продолжительность(s) linear;
+}
+
+                          Подробнее кнопка
+<details>
+<SUMMARY>текст который будет показываться пользователю</summary>
+	Текст который скрыт
+</details>
+Что бы сделать внизу черточку нужно написать в css
+Переменная{
+	Border: none;
+	Background-color:цвет;
+	Color:цвет;
+	Height, wight
+}
+
+
+
+
