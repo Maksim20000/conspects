@@ -1,0 +1,36 @@
+1) <br> - делает перенос на следующую строчку
+    <b></b> - делает жирным текст
+    <i></i> - делает текст курсивным
+    <ol> - нумерованный список
+    <ul> - маркерованный список
+
+
+2) @ - декаратор
+3) jinga - используется для передачи frony-end в back-end
+
+4) static - файл в котором хранятся css, img
+5) templates - папкадля хранения HTML
+6) чтобы создать блок мы используем команду:
+    {% block имя блока %}{% endblock %}
+    чтобы призвать мы ставим в начале
+    {% extends 'index.html' %} ( или можно include )
+    (index.html - лавный блок, все остальные дочерние)
+
+7) для призывания функци мы используем
+    def name():
+        return()
+
+8) random.choice - свойство перебирающее списки
+
+9) в HTML добавляем тэг form  в атрибутах указываем
+   <form action='/register' method='post'>
+
+   в python должно быть :
+   @app.route('/register', methods=['GET', 'POST'])
+        if request.method == 'POST':
+        for key in request.form:
+
+10) @login_require - делает так чтобы без регистрации нельзя зайти
+
+11) row = db.users.get('login', request.form['login'])
+    put - используется чтобы запихнуть
