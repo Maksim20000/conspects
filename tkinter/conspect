@@ -20,6 +20,7 @@
         win.minsize(300, 500)
         win.maxsize(800,900)
     5) Добавляем иконку
+        Важно файл должен быть в формате png
         thinterIcon = tk.PhotoImage(file='./img/tkinter-icon.png') - сохраняем
         win.iconphoto(False, thinterIcon) - вставляем в иконку
 
